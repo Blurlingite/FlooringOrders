@@ -176,7 +176,6 @@ public class FlooringMasteryController {
 
     }
 
-    // Non-Problem: if user enters what is already there as nam, tax and product? 
     private void editOrder () throws FlooringMasteryPersistenceException{
 
         // ask for date and validate it according to the format you set (MM/dd/yyyy)

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="13" failures="0" name="com.sg.flooringmastery.service.FlooringMasteryServiceLayerTest" time="0.003" errors="0" skipped="0">
+<testsuite tests="13" failures="0" name="com.sg.flooringmastery.service.FlooringMasteryServiceLayerTest" time="0.002" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib"/>
@@ -69,11 +69,11 @@
   <testcase classname="com.sg.flooringmastery.service.FlooringMasteryServiceLayerTest" name="testReadByAbbr" time="0"/>
   <testcase classname="com.sg.flooringmastery.service.FlooringMasteryServiceLayerTest" name="testGetProductByName" time="0"/>
   <testcase classname="com.sg.flooringmastery.service.FlooringMasteryServiceLayerTest" name="testGetAllOrdersToFile" time="0"/>
-  <testcase classname="com.sg.flooringmastery.service.FlooringMasteryServiceLayerTest" name="testEditOrder" time="0.001"/>
+  <testcase classname="com.sg.flooringmastery.service.FlooringMasteryServiceLayerTest" name="testEditOrder" time="0"/>
   <testcase classname="com.sg.flooringmastery.service.FlooringMasteryServiceLayerTest" name="testCreateOrder" time="0.001"/>
   <testcase classname="com.sg.flooringmastery.service.FlooringMasteryServiceLayerTest" name="testGetAllTaxes" time="0"/>
-  <testcase classname="com.sg.flooringmastery.service.FlooringMasteryServiceLayerTest" name="testGetOrderInvalidDate" time="0.001"/>
-  <testcase classname="com.sg.flooringmastery.service.FlooringMasteryServiceLayerTest" name="testGetOrderInvalidId" time="0"/>
+  <testcase classname="com.sg.flooringmastery.service.FlooringMasteryServiceLayerTest" name="testGetOrderInvalidDate" time="0"/>
+  <testcase classname="com.sg.flooringmastery.service.FlooringMasteryServiceLayerTest" name="testGetOrderInvalidId" time="0.001"/>
   <testcase classname="com.sg.flooringmastery.service.FlooringMasteryServiceLayerTest" name="testGetAllOrders" time="0"/>
   <testcase classname="com.sg.flooringmastery.service.FlooringMasteryServiceLayerTest" name="testCreateFile" time="0"/>
   <testcase classname="com.sg.flooringmastery.service.FlooringMasteryServiceLayerTest" name="testGetAllProducts" time="0"/>

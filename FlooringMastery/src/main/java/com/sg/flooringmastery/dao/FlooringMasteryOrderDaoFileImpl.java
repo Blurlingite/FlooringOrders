@@ -43,9 +43,13 @@ public class FlooringMasteryOrderDaoFileImpl implements FlooringMasteryOrderDao 
     public List<Order> getAllOrders(String date) throws FlooringMasteryPersistenceException {
         
         Map<Integer, Order> hm = ordersByDate.get(date); // get the hashmap by the date
-        
-         return new ArrayList<>(hm.values());   // get and return the list of orders from the <Integer, Order> hashmap
-        
+        // when the file is empty the map will be null, so to avoid error, return an empty ArrayList instead, that way it skips that empty file
+        if(hm == null){
+            return new ArrayList<>();
+        }else{
+            return new ArrayList<>(hm.values());   // get and return the list of orders from the <Integer, Order> hashmap
+
+        }
     }
 
 
@@ -388,6 +392,8 @@ public class FlooringMasteryOrderDaoFileImpl implements FlooringMasteryOrderDao 
         return listOfDates;
 
         }
+    
+
     
   
 }
