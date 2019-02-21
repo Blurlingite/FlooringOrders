@@ -7,8 +7,6 @@ package com.sg.flooringmastery;
 
 import com.sg.flooringmastery.controller.FlooringMasteryController;
 import com.sg.flooringmastery.dao.FlooringMasteryPersistenceException;
-import com.sg.flooringmastery.service.InvalidDateException;
-import java.io.IOException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

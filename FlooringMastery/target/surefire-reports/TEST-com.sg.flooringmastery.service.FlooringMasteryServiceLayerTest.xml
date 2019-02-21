@@ -6,7 +6,7 @@
     <property name="java.vm.version" value="25.181-b13"/>
     <property name="gopherProxySet" value="false"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/vishnukdawah/Documents/bitbucket/vishnu-dawah-individual-work/Milestone5/FlooringMastery"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/vishnukdawah/Documents/github/FlooringOrders/FlooringMastery"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/vishnukdawah/Documents/bitbucket/vishnu-dawah-individual-work/Milestone5/FlooringMastery"/>
+    <property name="user.dir" value="/Users/vishnukdawah/Documents/github/FlooringOrders/FlooringMastery"/>
     <property name="java.runtime.version" value="1.8.0_181-b13"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/endorsed"/>
@@ -34,7 +34,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.14"/>
+    <property name="os.version" value="10.14.1"/>
     <property name="library.jansi.path" value="/Users/vishnukdawah/Documents/APACHE MAVEN/apache-maven-3.5.4/lib/jansi-native"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="user.home" value="/Users/vishnukdawah"/>
@@ -72,10 +72,10 @@
   <testcase classname="com.sg.flooringmastery.service.FlooringMasteryServiceLayerTest" name="testEditOrder" time="0.001"/>
   <testcase classname="com.sg.flooringmastery.service.FlooringMasteryServiceLayerTest" name="testCreateOrder" time="0.001"/>
   <testcase classname="com.sg.flooringmastery.service.FlooringMasteryServiceLayerTest" name="testGetAllTaxes" time="0"/>
-  <testcase classname="com.sg.flooringmastery.service.FlooringMasteryServiceLayerTest" name="testGetOrderInvalidDate" time="0"/>
+  <testcase classname="com.sg.flooringmastery.service.FlooringMasteryServiceLayerTest" name="testGetOrderInvalidDate" time="0.001"/>
   <testcase classname="com.sg.flooringmastery.service.FlooringMasteryServiceLayerTest" name="testGetOrderInvalidId" time="0"/>
   <testcase classname="com.sg.flooringmastery.service.FlooringMasteryServiceLayerTest" name="testGetAllOrders" time="0"/>
   <testcase classname="com.sg.flooringmastery.service.FlooringMasteryServiceLayerTest" name="testCreateFile" time="0"/>
-  <testcase classname="com.sg.flooringmastery.service.FlooringMasteryServiceLayerTest" name="testGetAllProducts" time="0.001"/>
+  <testcase classname="com.sg.flooringmastery.service.FlooringMasteryServiceLayerTest" name="testGetAllProducts" time="0"/>
   <testcase classname="com.sg.flooringmastery.service.FlooringMasteryServiceLayerTest" name="testLoadNestedHashmap" time="0"/>
 </testsuite>

@@ -189,23 +189,6 @@ public class FlooringMasteryServiceLayerImpl implements FlooringMasteryServiceLa
         
     }
     
-//    private void validateArea(BigDecimal overLimit) throws InvalidAreaException{
-//        
-//        BigDecimal hundred = new BigDecimal("100.00");
-//        BigDecimal hundredScaled = hundred.setScale(2, RoundingMode.HALF_UP);
-//        
-//        
-//        int bigDecimalComparison = overLimit.compareTo(hundredScaled);  // comapre what the user entered as area with "100.00"
-//        
-//        if(bigDecimalComparison == 1){
-//            throw new InvalidAreaException(
-//            "ERROR! The maximum amount of area is 100.00");
-//        }
-//        
-//        
-//    }
-    
-    
 
     @Override
     public void loadNestedHashmap() throws FlooringMasteryPersistenceException {

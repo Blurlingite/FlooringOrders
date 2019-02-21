@@ -13,9 +13,7 @@ public class FlooringMasteryAuditDaoStubImpl implements FlooringMasteryAuditDao 
 
     @Override
     public void writeLog(String entry) throws FlooringMasteryPersistenceException {
-        // do nothing
+        // do nothing because we are using AOP to write logs
     }
-    
-    
     
 }

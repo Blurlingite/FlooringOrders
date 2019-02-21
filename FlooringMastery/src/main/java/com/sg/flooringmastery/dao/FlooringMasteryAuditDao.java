@@ -10,11 +10,7 @@ package com.sg.flooringmastery.dao;
  * @author acetip
  */
 public interface FlooringMasteryAuditDao {
-        
     
     public void writeLog(String entry) throws FlooringMasteryPersistenceException;
-    
-
-    
   
 }

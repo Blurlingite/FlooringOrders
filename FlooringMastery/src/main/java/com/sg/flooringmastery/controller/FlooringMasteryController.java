@@ -12,14 +12,11 @@ import com.sg.flooringmastery.dto.Order;
 import com.sg.flooringmastery.dto.Product;
 import com.sg.flooringmastery.dto.StateTax;
 import com.sg.flooringmastery.service.FlooringMasteryServiceLayer;
-import com.sg.flooringmastery.service.InvalidAreaException;
 import com.sg.flooringmastery.service.InvalidDateException;
 import com.sg.flooringmastery.service.InvalidOrderIdException;
 import com.sg.flooringmastery.ui.FlooringMasteryView;
 import java.math.BigDecimal;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 
 /**
@@ -219,13 +216,11 @@ public class FlooringMasteryController {
             while(keepLooping){
                 String yesOrNo = view.displayOrderAndGetApproval(removedOrder); // display order and ask to remove it
                 if(yesOrNo.equalsIgnoreCase("Y")){  // if user wants to remove the order, remove it
-//                    todaysDate = "0812017"; // set todaysDate to the wrong date so when the 2 dates are compared and a date is set to ORDER_FILE in Dao, the file will be overwritten 
                     service.deleteOrder(originalDate, removedOrder);
                     view.printOrderSuccessMessage("REMOVED");   // tell the user the order was removed
                     keepLooping = false;
                 }else if(yesOrNo.equalsIgnoreCase("N")){    // if not then don't
                  view.printOrderFailureMessage("REMOVED");
-//                 todaysDate = "0812017"; // set todaysDate to the wrong date so when the 2 dates are compared and a date is set to ORDER_FILE in Dao, the file will be overwritten 
                  keepLooping = false;   // do nothing, but exit out of loop
                 }else{                  // if they don't enter "Y" or "N"
                  keepLooping = true; // keep looping
@@ -255,8 +250,6 @@ public class FlooringMasteryController {
         // delete the file that was created if they added any orders
         
     }
-
-    
     
     
 }

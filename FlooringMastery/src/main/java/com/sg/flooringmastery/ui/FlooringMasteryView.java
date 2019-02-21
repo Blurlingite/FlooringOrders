@@ -67,7 +67,7 @@ public class FlooringMasteryView {
         return io.readInt("Select from the above choices", 1, 6);
 
     }
-//        
+       
     public String displayOrderAndGetApproval(Order approval){
         
         io.print("Order: " + approval.getCustomerName() + " || " + approval.getState() +" || " + 
@@ -77,11 +77,7 @@ public class FlooringMasteryView {
         return io.readString("Remove this order? (Y/N)");
     
     }
-//
-//    public String AskForListOfOrdersByDate(String date){
-//    
-//    }
-//
+
     public void printOrderListByDate(List<Order> orderList){
         
         for(Order order : orderList){
@@ -256,8 +252,6 @@ public class FlooringMasteryView {
         boolean changeTheArea = true;
         
         
-        
-
         
        io.print("Current Order Info: "); 
        

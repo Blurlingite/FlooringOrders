@@ -139,10 +139,8 @@ public class UserIOConsoleImpl implements UserIO {
         input = input.trim();
 
         while(input.contains(":")){
-//        input = sc.nextLine(); 
             readString(prompt);
         }
-//        input = input.trim();
         
         return input;   // return what the user inputs
     

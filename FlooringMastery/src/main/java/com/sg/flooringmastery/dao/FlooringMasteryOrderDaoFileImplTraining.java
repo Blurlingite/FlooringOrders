@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+    This class takes care of training mode only
  */
 package com.sg.flooringmastery.dao;
 
@@ -108,48 +106,6 @@ public class FlooringMasteryOrderDaoFileImplTraining implements FlooringMasteryO
     @Override
     public String createFile(String date, String todaysDate) throws FlooringMasteryPersistenceException{
         
-//        String fileName = "";
-//         
-//        if(date.equalsIgnoreCase(todaysDate)){  // if the date is today's date, make the file for today's date which will set the ORDER_FILE variable     
-//             fileName = "Orders_" + todaysDate  + ".txt";    // what you will all the file
-//        }else{  // otherwise, use the date that was entered by the user and set ORDER_FILE to this date instead
-//             fileName = "Orders_" + date  + ".txt";    // what you will all the file
-//        }
-//        
-//            try {
-//                
-//                // find the directory that java was run from (in this case it's in your Netbeasns project folder)
-//                String workingDirectory = System.getProperty("user.dir");   
-//			
-//			
-//                String absoluteFilePath = "";
-//			
-//                //absoluteFilePath = workingDirectory + System.getProperty("file.separator") + filename;
-//                absoluteFilePath = workingDirectory + File.separator + fileName;
-//               // File.separator is either / or \ that is used to split up the path to a specific file. For example on Windows it is \ or C:\Documents\Test
-//               
-//               
-//                System.out.println("Final filepath : " + absoluteFilePath);
-//			
-//			
-//                File file = new File(absoluteFilePath);
-//               // if the file was created
-//                if (file.createNewFile()) {
-//                    System.out.println("File is created!");
-//                } else {
-//                    
-//                    System.out.println("File already exists!");
-//                }
-//
-//            } catch (IOException e) {
-//              throw new FlooringMasteryPersistenceException(
-//              "COULD NOT PERSIST TO FILE",e);
-//            }
-//            
-//            // set the filename to the public (no longer static final) string variable
-//            this.ORDER_FILE = fileName;
-//        
-//        return fileName;
         return "You are in Training mode, cannot create file";
     }
     
@@ -248,47 +204,20 @@ public class FlooringMasteryOrderDaoFileImplTraining implements FlooringMasteryO
 
     }
     
-    // needs to be commented out for Training mode
-    // this will write changes to all files
+    // needs to be empty for Training mode
+    // this will write changes to all files but only in production mode, this class takes care of training mode only
+    // see OrderDaoFileImpl class for code
     @Override
     public void getAllOrdersToFile() throws FlooringMasteryPersistenceException{
         
-//        writeOrders(getListOfDates()); // make a new file with date as title and add orders to it
         
     }
     
-// will not be used in Training mode
+// will not be used in Training mode, see OrderDaoFileImpl class for code
     private int generateOrderId(String date) throws FlooringMasteryPersistenceException{
+        
         return 0;
         
-//        String fileName = "Orders_" + date + ".txt";
-//        int lineCounter = 1;    // count how many lines there are in the file, start at 1 so you don't overwrite the last line in the file
-//        Scanner scanner;
-//	    
-//	try {
-//	    // Create Scanner for reading the file
-//	    scanner = new Scanner(
-//	            new BufferedReader(
-//	                    new FileReader(fileName)));
-//	} catch (FileNotFoundException e) {
-//	    throw new FlooringMasteryPersistenceException(
-//	            "-_- Could not load roster data into memory.", e);
-//	}
-//	// currentLine holds the most recent line read from the file
-//
-//	// Go through file line by line, decoding each line into a 
-//	// Item object.
-//	// Process while we have more lines in the file
-//        
-//        Map<Integer, Order> hm = ordersByDate.get(date);
-//        if(hm == null){     // the hashmap is null when empty so add an order with an ID of 1
-//            lineCounter = 1;
-//        }else{
-//            lineCounter = (hm.size()) + 1;
-//        }
-//           
-//        scanner.close();
-//        return lineCounter;
         }
     
        
